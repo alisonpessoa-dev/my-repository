@@ -6,7 +6,7 @@ input, textarea, select {
     border-radius: .5rem;
     border: 1px solid var(--stroke-default);
 
-    padding:  .75rem 1rem;
+    padding: .75rem 1rem;
 
     font: var(--text);
 }
@@ -50,4 +50,22 @@ input[type="date"] {
 
 select {
     background: url(../../assets/icons/arrow-down-01.svg) no-repeat calc(100% -1rem);
+}
+
+.address .flex {
+    gap: 1.25rem;
+}
+
+.input-wrapper:has([disabled]) {
+    opacity: .5;
+}
+
+input {
+    &[disabled] {
+        background-color: var(--surface-disable);
+
+        border:  1px solid var(--stroke-default);
+
+        color: var(--text-primary);
+    }
 }
